@@ -17,7 +17,7 @@ app.use(express.json()); /* bodyParser.json() is deprecated */
 app.use(express.urlencoded({ extended: true })); /* bodyParser.urlencoded() is deprecated */
 
 // simple route
-app.get("/aaa/", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application555." });
 });
 
